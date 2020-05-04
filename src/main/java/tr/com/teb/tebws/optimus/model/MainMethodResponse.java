@@ -1,6 +1,8 @@
 
 package tr.com.teb.tebws.optimus.model;
 
+import io.quarkus.runtime.annotations.RegisterForReflection;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -38,6 +40,7 @@ import javax.xml.bind.annotation.XmlType;
     "pOutputXML"
 })
 @XmlRootElement(name = "MainMethodResponse")
+@RegisterForReflection
 public class MainMethodResponse {
 
     @XmlElement(name = "MainMethodResult")

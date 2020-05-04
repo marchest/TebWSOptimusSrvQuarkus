@@ -1,6 +1,8 @@
 
 package tr.com.teb.tebws.optimus.model;
 
+import io.quarkus.runtime.annotations.RegisterForReflection;
+
 import javax.enterprise.context.RequestScoped;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -39,6 +41,7 @@ import javax.xml.bind.annotation.XmlType;
     "pInputXML"
 })
 @XmlRootElement(name = "MainMethod")
+@RegisterForReflection
 public class MainMethod {
 
     @XmlElement(name = "p_Password")
